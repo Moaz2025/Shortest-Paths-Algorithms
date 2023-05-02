@@ -9,26 +9,16 @@ public class Test {
     public static final String YELLOW = "\u001B[33m";
     public static final String BLUE = "\u001B[34m";
     public static final String BLUE_BACKGROUND = "\u001B[44m";
+
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
         String filePath;
         Graph graph;
 
-        String[] paths = {"G1test","G2test","G3test","G4test","test1","test2","test3"};
+        String[] paths = {"G1test","G2test","G3test","G4test","G8test","G9test","G10test"};
 
-//        System.out.print("Enter graph file path: ");
-//        while (true) {
-//            try {
-//                filePath = scanner.nextLine();
-//                graph = new Graph(filePath);
-//                break;
-//            } catch (java.io.FileNotFoundException e) {
-//                System.out.print("Wrong file path, please renter the path: ");
-//            }
-//        }
-        for(int p=0;p<paths.length;p++)
-        {
-            filePath = "C:\\CSED\\Data structures 2\\Labs\\Shortest-Paths-Algorithms\\src\\main\\java\\tests\\" +paths[p]+".txt" ;
+        for (int p = 0; p<paths.length; p++) {
+            filePath = "C:\\Users\\mosta\\Desktop\\kok\\Shortest-Paths-Algorithms\\src\\test\\java\\tests\\" +paths[p]+".txt" ;
             graph = new Graph(filePath);
             int[] dijParents = new int[graph.size()];
             int[] bellParents = new int[graph.size()];
