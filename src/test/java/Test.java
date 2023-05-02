@@ -18,7 +18,7 @@ public class Test {
         String[] paths = {"G1test","G2test","G3test","G4test","G8test","G9test","G10test"};
 
         for (int p = 0; p<paths.length; p++) {
-            filePath = "C:\\Users\\mosta\\Desktop\\kok\\Shortest-Paths-Algorithms\\src\\test\\java\\tests\\" +paths[p]+".txt" ;
+            filePath = "C:\\CSED\\Data structures 2\\Labs\\Shortest-Paths-Algorithms\\src\\test\\java\\tests\\" +paths[p]+".txt" ;
             graph = new Graph(filePath);
             int[] dijParents = new int[graph.size()];
             int[] bellParents = new int[graph.size()];
